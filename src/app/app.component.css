@@ -1,0 +1,66 @@
+
+.header1{
+  margin-left: 20px;
+  margin-bottom: 50px;
+  color:#3C6684 ;
+}
+
+.card{
+  margin:auto;
+  border: solid;
+  border-color:#3C6684;
+}
+
+.card-text{
+  height: 150px;
+  display: inline-block;
+}
+
+.wizard {
+  display: flex;
+}
+
+.wizard__step {
+  /* Make all steps have the same width */
+  flex: 1;
+  color: #3C6684;
+  font: 1.2em "Fira Sans", sans-serif;
+}
+
+.wizard__dot {
+  /* Center the content */
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.wizard__connector {
+  flex: 1;
+  height: 3px;
+  background-color: #3C6684;
+}
+
+/* .wizard__step:first-child .wizard__connector, */
+.wizard__step:last-child .wizard__connector {
+  background-color: transparent;
+}
+
+.wizard__number {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  /* Rounded border */
+  cursor: pointer;
+  color: white;
+  background-color: #3C6684;
+  border-radius: 9999px;
+  height: 32px;
+  width: 32px;
+
+  /* OPTIONAL: Spacing between it and connectors */
+  margin-left: 4px;
+  margin-right: 4px;
+}
